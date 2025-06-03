@@ -1,0 +1,54 @@
+# API Rate Limit Configuration
+configBucket: sporting-api-configs
+configPath: api-rate-limits
+apis:
+  - id: sportradar-api
+    baseUrl: api.sportradar.com
+    apiKeySecretName: sportradar-api-key
+    limits:
+      - id: per-second
+        maxCount: 1
+        timeUnit: SECONDS
+      - id: per-minute
+        maxCount: 10
+        timeUnit: MINUTES
+      - id: per-day
+        maxCount: 1000
+        timeUnit: DAYS
+  - id: rapidapi-basketball
+    baseUrl: api-basketball-rapidapi.p.rapidapi.com
+    apiKeySecretName: rapidapi-basketball-key
+    limits:
+      - id: per-minute
+        maxCount: 10
+        timeUnit: MINUTES
+      - id: per-hour
+        maxCount: 100
+        timeUnit: HOURS
+      - id: per-day
+        maxCount: 500
+        timeUnit: DAYS
+  - id: dev-sportradar-api
+    baseUrl: developer.sportradar.com
+    apiKeySecretName: dev-sportradar-api-key
+    limits:
+      - id: per-second
+        maxCount: 1
+        timeUnit: SECONDS
+      - id: per-minute
+        maxCount: 5
+        timeUnit: MINUTES
+      - id: per-hour
+        maxCount: 60
+        timeUnit: HOURS
+  - id: theoddsapi
+    baseUrl: api.the-odds-api.com
+    apiKeySecretName: theoddsapi-key
+    limits:
+      - id: per-minute
+        maxCount: 15
+        timeUnit: MINUTES
+      - id: per-month
+        maxCount: 500
+        timeUnit: MONTHS
+
