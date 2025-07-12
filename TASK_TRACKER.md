@@ -18,7 +18,7 @@
 - [ ] Consider separate window strategies for different sports (NBA vs NFL scheduling differences)
 
 ### Sports & Odds APIs
-- [ ] Research available basketball and football data APIs (candidates: The Odds API, SportsData.io)
+- [X] Research available basketball and football data APIs (candidates: The Odds API, SportsData.io)
 - [ ] Compare pricing, rate limits, and data coverage
 - [ ] Evaluate data freshness and update frequency
 - [ ] Select primary and fallback data sources

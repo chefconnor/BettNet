@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sporting
+  config:
+    import: "optional:gcp_secretmanager:" # Making this optional so it doesn't fail if not available
+  cloud:
+    gcp:
+      project-id: bettnet-sporting
+      # secretmanager: # Optional, usually auto-configured
+        # enabled: true
+
