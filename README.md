@@ -4,9 +4,11 @@ A real-time sports betting analytics system that leverages ML algorithms to iden
 
 ## Project Overview
 
-This portfolio project demonstrates real-time data engineering skills by:
+This is the back end of the sporting bettnet tool, a chance for me to work on streaming pipelines for ML
+- I know nothing about sports
+- I know nothing about betting
 - Ingesting sports and odds data from multiple APIs
-- Processing streams of data through ML algorithms
+- Sends the data to the Gradient Boosted Trees model
 - Identifying betting opportunities based on market inefficiencies
 - Managing paper trades through a rule-based system
 - Evaluating performance and implementing self-correction
